@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.page-container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.chip-input-container {
+    text-align: center;
+}
+
+.chips-container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip {
+    background-color: #f0f0f0;
+    
+    padding: 10px 20px 10px 20px;
+    border-radius: 80px;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.chip-remove-btn {
+    background: none;
+    border: none;
+    color: red;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.input-field {
+    width: 50%;
+    padding: 8px;
+    border: none;
+    padding-top: 30px;
+    border-bottom: 2px solid blue;
+    border-radius: 4px;
+    outline: none;
+    height: auto;
+}
+
+.item-list {
+    position: relative;
+    width: 500px;
+    max-height: 200px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.user-item,
+.chip-item {
+    width: auto;
+    padding: 5px 20px 5px 29px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; 
+}
+
+.user-item > .name,
+.chip-item > .name {
+    font-weight: bold; 
+}
+
+.user-item > .email,
+.chip-item > .email {
+    font-size: 0.6em; 
+    color: gray; 
+}
+
+.user-item:hover,
+.chip-item:hover {
+    background-color: #f0f0f0;
+}
